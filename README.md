@@ -32,8 +32,10 @@ Basic structure for a new module
    Note: some (e.g. Leaflet) put examples/ inside docs/, presumably
    because you can point GitHub Pages to docs/.
    Put main JS file in src/main.js (as per rollup.config. Some use index.js?)
-2. Write a README.md !! NOTE that the first line (separated by two blank lines)
-   will become the "description" in the package.json
+2. Write a README.md !! NOTE that the first line after the title will become 
+   the "description" in the package.json. This description should be short
+   (<80 characters) and separated from both the title and any following text
+   by blank lines.
 3. Initialize Git ($ git init). Don't forget to copy the .gitignore file
 4. Create the repository on GitHub (DON'T add .gitignore or license), and add
    the remote origin in Git:
@@ -67,8 +69,8 @@ message should always begin with a one-line short message (<80 characters),
 starting with an imperative verb. Any further details should be separated from
 the short message by a blank line.
 
-For backing up changes to GitHub, you can simply execute `git push`, since we
-are already tracking the remote branch.
+For backing up your changes to GitHub, you can simply execute `git push`, since 
+we are already tracking the remote branch.
 
 When you have something working, you can make it a *version* so users can
 use it as a fixed dependency for their projects. That way, any new changes you
@@ -77,12 +79,14 @@ for your new version.
 
 To create/update a version, use the [npm version] command. The package.json
 includes a `postversion` script which will automatically take care of the
-relevant Git push commands.
+relevant Git push commands. If this gives permission errors, see the related
+[StackOverflow question].
 
 All version numbers should follow the [Semantic Versioning] standard.
 
 [npm version]: https://docs.npmjs.com/cli/version
 [Semantic Versioning]: https://semver.org/
+[StackOverflow question]: https://stackoverflow.com/questions/52081385/npm-version-issuepostversion-cannot-run-in-wd-s-s-wd-s
 
 ## TODO
 - Automate the correction of the "directories" property in the package.json
