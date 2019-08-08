@@ -67,8 +67,11 @@ message should always begin with a one-line short message (<80 characters),
 starting with an imperative verb. Any further details should be separated from
 the short message by a blank line.
 
+For backing up changes to GitHub, you can simply execute `git push`, since we
+are already tracking the remote branch.
+
 When you have something working, you can make it a *version* so users can
-make it a fixed dependency for their projects. That way, any new changes you
+use it as a fixed dependency for their projects. That way, any new changes you
 make to the module will never break their code, unless they specifically ask
 for your new version.
 
