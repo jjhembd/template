@@ -24,6 +24,7 @@
   "name": "template",
   "description": "Basic structure for a new module",
   "main": "dist/template.bundle.js",
+  "module": "dist/template.bundle.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jjhembd/template.git"
