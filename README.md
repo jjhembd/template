@@ -31,7 +31,8 @@ Basic structure for a new module
    git add *
    git add .gitignore
    git commit -a
-   git push -u origin master
+   git branch -m master main
+   git push -u origin main
    ```
 
 ## Maintenance

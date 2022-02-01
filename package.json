@@ -15,10 +15,9 @@
   "author": "Jeshurun Hembd",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^2.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup": "^2.66.1"
   },
   "name": "template",
   "description": "Basic structure for a new module",
